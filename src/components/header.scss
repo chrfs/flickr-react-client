@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  align-items: center;
+  padding: 0 6.25rem;
+  border-bottom: 1px solid #36373b;
+  background: #202124;
+  z-index: 2;
+  @media(max-width: 768px) {
+    flex-direction: column;
+    padding: 0;
+  }
+  &__logo{
+    padding: 1rem 2rem;
+    width: 6.25rem;
+    cursor: pointer;
+  }
+  &__menu-list {
+    display: inline-flex;
+    list-style: none;
+    margin: 0 auto;
+    align-self: stretch;
+    padding: 0;
+    li {
+      padding: .5rem 2rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-bottom: none;
+      border-top: none;
+      transition: .6s all ease-in-out;
+      display: flex;
+      align-items: center;
+      &:hover {
+        border-color: #6a6b70;
+        background: #2f3031;
+      }
+    }
+  }
+}
